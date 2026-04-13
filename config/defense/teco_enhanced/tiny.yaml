@@ -1,0 +1,16 @@
+device: 'cuda'
+dataset: 'tiny'
+num_classes: 200
+input_height: 64
+input_width: 64
+input_channel: 3
+
+batch_size: 64
+num_workers: 4
+
+model: 'preactresnet18'
+num_levels: 5
+
+frequency_cutoff_min: 0.05
+frequency_cutoff_max: 0.5
+spatial_corruptions_used: 5

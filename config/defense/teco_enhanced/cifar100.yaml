@@ -1,0 +1,16 @@
+device: 'cuda'
+dataset: 'cifar100'
+num_classes: 100
+input_height: 32
+input_width: 32
+input_channel: 3
+
+batch_size: 128
+num_workers: 4
+
+model: 'preactresnet18'
+num_levels: 5
+
+frequency_cutoff_min: 0.05
+frequency_cutoff_max: 0.5
+spatial_corruptions_used: 5

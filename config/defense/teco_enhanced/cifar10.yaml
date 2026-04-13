@@ -1,0 +1,21 @@
+device: 'cuda'
+dataset: 'cifar10'
+num_classes: 10
+input_height: 32
+input_width: 32
+input_channel: 3
+
+batch_size: 128
+num_workers: 4
+
+model: 'preactresnet18'
+num_levels: 5
+
+# Frequency domain settings
+# cutoff_ratio range: lower = more aggressive filtering (remove more low frequencies)
+frequency_cutoff_min: 0.05
+frequency_cutoff_max: 0.5
+
+# Spatial domain settings (from imagecorruptions)
+# Uses first N corruptions for speed, set to 15 for full
+spatial_corruptions_used: 5
