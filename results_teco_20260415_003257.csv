@@ -1,0 +1,7 @@
+dataset,attack,defense,auc,f1,timestamp
+cifar10,badnet,teco_enhanced_v2,0.929150,0.863693,20260415_003257
+cifar10,blended,teco_enhanced_v2,0.987177,0.946026,20260415_003257
+cifar10,sig,teco_enhanced_v2,0.981035,0.953875,20260415_003257
+cifar10,lf,teco_enhanced_v2,0.993516,0.971234,20260415_003257
+cifar100,badnet,teco_enhanced_v2,0.930406,0.880484,20260415_003257
+cifar100,blended,teco_enhanced_v2,0.916496,0.842865,20260415_003257

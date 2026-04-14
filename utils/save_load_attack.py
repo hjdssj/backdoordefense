@@ -187,7 +187,7 @@ def load_attack_result(
     save_path MUST have 'record' in its abspath, and data_path in attack result MUST have 'data' in its path!!!
     save_path : the path of "attack_result.pt"
     '''
-    load_file = torch.load(save_path)
+    load_file = torch.load(save_path, weights_only=False)
 
     # no dependence to later parts., just save debug info at the save folder of attack_result
     debug_info_folder_path = f"{os.path.dirname(save_path)}/debug"
