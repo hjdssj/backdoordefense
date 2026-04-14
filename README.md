@@ -4,10 +4,29 @@
 ![Pytorch 1.10.0](https://img.shields.io/badge/pytorch-1.10.0-DodgerBlue.svg?style=plastic)
 ![opencv 4.5.4.60](https://img.shields.io/badge/opencv-4.5.4.60-DodgerBlue.svg?style=plastic)
 
+---
 
-### ❗ This is v1 of BackdoorBench. For v2, please refer to [link](https://github.com/SCLBD/BackdoorBench). In our new version, we provide more backdoor attack and defense methods, and more detailed documentation. 
+## ⚠️ Project Fork Notice
 
-### ❗ Important update: We have corrected the code for Label Consistent Attack in v1 also now. 
+**本项目基于 [SCLBD/BackdoorBench](https://github.com/SCLBD/BackdoorBench)（NeurIPS 2022）构建，保留原项目全部内容。**
+
+**本项目新增内容：**
+
+| 文件 | 说明 |
+|---|---|
+| `defense/teco_enhanced/` | TeCo-Enhanced v2：多域腐蚀特征 + 逻辑回归融合后门检测 |
+| `defense/teco/` | TeCo 原实现（CVPR 2023） |
+| `run_experiments.py` | 批量实验脚本，支持自动化运行与结果收集 |
+| `visualize_frequency.py` | 频域分析可视化（图像对比、指标分布、AUC柱状图） |
+| `visualize_logistic.py` | 逻辑回归过程可视化（权重、决策边界、ROC曲线） |
+| `PROJECT_SUMMARY.md` | 研究总结文档（方法说明、实验结果、可视化说明） |
+| `figures/` | 所有可视化结果图 |
+
+详细方法说明请参阅 [PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)。
+
+**兼容性修复：** 原 BackdoorBench 代码适配 PyTorch 2.6+（`utils/save_load_attack.py` 添加 `weights_only=False`）。
+
+--- 
 
 <!---
 ## [Overview](#overview)
